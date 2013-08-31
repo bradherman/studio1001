@@ -1,0 +1,58 @@
+<div class="page_description">
+  <h1>Shellac Studio 1001's Newest Treatment</h1>
+  <p>Meet Shellac. It's the newest product out to make your manicure or pedicure last as long as possible. Tired of a manicure that chips and cracks after only a few days? With Shellac your nails will keep their color and consistency for up to two weeks. The benefits start immediately since Shellac dries instantly, and they continue on for at least 2 weeks as the shellac looks immaculate the entire time.</p>
+</div>
+<div id="shellac">
+  <div class="shellac_service_item">
+    <h2>Price</h2>
+    <table>
+      <tr>
+        <td>Manicure</td>
+        <td>$<%= Price.where(type: 'Manicure', name: "Shellac").first.try(:amount) %></td>
+      </tr>
+      <tr>
+        <td>Pedicure</td>
+        <td>$<td>$<%= Price.where(type: 'Pedicure', name: "Shellac").first.try(:amount) %></td></td>
+      </tr>
+    </table>
+  </div>
+  <div class="shellac_service_item">
+    <h2>Available Colors</h2>
+    <div id="color_swatch">
+      <table>
+        <tr>
+          <td id="sh01" title="Mother of Pearl"></td>
+          <td id="sh02" title="Cream Puff"></td>
+          <td id="sh03" title="Negligee"></td>
+          <td id="sh04" title="Beau"></td>
+          <td id="sh05" title="Clearly Pink"></td>
+          <td id="sh06" title="Romantique"></td>
+        </tr>
+        <tr>
+          <td id="sh07" title="Strawberry Smoothie"></td>
+          <td id="sh08" title="Rose Bud"></td>
+          <td id="sh09" title="Gotcha"></td>
+          <td id="sh10" title="Hot Pop Pink"></td>
+          <td id="sh11" title="Tuiti Fruiti"></td>
+          <td id="sh12" title="Tropix"></td>
+        </tr>
+        <tr>
+          <td id="sh13" title="Hot Chilis"></td>
+          <td id="sh14" title="Hollywood"></td>
+          <td id="sh15" title="Wildfire"></td>
+          <td id="sh16" title="Red Baroness"></td>
+          <td id="sh17" title="Decadence"></td>
+          <td id="sh18" title="Masquerade"></td>
+        </tr>
+        <tr>
+          <td id="sh19" title="Iced Coral"></td>
+          <td id="sh20" title="Iced Cappuccino"></td>
+          <td id="sh21" title="Cocoa"></td>
+          <td id="sh22" title="Fedora"></td>
+          <td id="sh23" title="Rock Royalty"></td>
+          <td id="sh24" title="Black Pool"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

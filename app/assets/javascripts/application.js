@@ -10,7 +10,11 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
+//= require 'respond.min'
+//= require 'jquery.easing.1.3'
+//= require 'jquery.galleryview-1.1-pack'
+//= require 'jquery.timers-1.1.2'
+//= require 'modernizr-1.7.min'
+//= require 'plugins'
+//= require 'script'
 //= require_tree .

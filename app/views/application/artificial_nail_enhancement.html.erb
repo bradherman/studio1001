@@ -1,0 +1,26 @@
+<div class="page_description">
+  <h1>Artificial Nail Enhancements from Studio 1001</h1>
+  <p>Need longer nails now? Our artificial nail enhancements will transform your hands before your eyes. Whether you have a wedding, a business meeting or just want to be ready for your weekend out on the town, our artificial nail enhancements are the right ones for your hands.</p>
+</div>
+<div class="art_nail_service_item">
+  <h2>Prices</h2>
+  
+  <div class="art_nail an_1">
+    <h3>Gel</h3>
+    <table>
+      <tr>
+        <td>Manicure</td>
+        <td>$<%= Price.where(type: 'Manicure', name: "Gel Enhancement").first.try(:amount) %></td>
+      </tr>
+    </table>
+  </div>
+  <div class="art_nail an_2">
+    <h3>Acryllic</h3>
+    <table>
+      <tr>
+        <td>Manicure</td>
+        <td>$<%= Price.where(type: 'Manicure', name: "Acryllic Enhancement").first.try(:amount) %></td>
+      </tr>
+    </table>
+  </div>
+</div>

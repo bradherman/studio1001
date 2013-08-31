@@ -1,0 +1,95 @@
+<div class="page_description">
+  <h1>Spa Treatments by Studio 1001</h1>
+  <p>Our spa services range from full service manicures to full service pedicures. Your hands and feet will be enthralled with the treatment they receive when they visit our store in Broad Ripple. Read through our services list, and if you do not see a service you would like or have any questions regarding the services listed, please contact us to discuss them immediately.</p>
+</div>
+<div class="spa_service_item clearfix">
+  <div class="spa_table">
+    <h2>Manicure</h2>
+    <p>Receive a manicure from Studio 1001 today to impress your friends and coworkers. Our work will make your fingers shine, sparkle or colorful - depending on what you are looking for. </p>
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Express Manicure</td>
+        <td>$<%= Price.where(type: 'Manicure', name: 'Express Manicure').first.try(:amount) %></td>
+      </tr>
+      <tr>
+        <td>Customized Manicure</td>
+        <td>$<%= Price.where(type: 'Manicure', name: 'Customized Manicure').first.try(:amount) %></td>
+      </tr>
+      <tr>
+        <td>Paraffin Dip</td>
+        <td>$<%= Price.where(type: 'Manicure', name: 'Paraffin Dip').first.try(:amount) %></td>
+      </tr>
+      <tr>
+        <td>French Polish</td>
+        <td>$<%= Price.where(type: 'Manicure', name: 'French Polish').first.try(:amount) %></td>
+      </tr>
+      <tr>
+        <td>Polish Only</td>
+        <td>$<%= Price.where(type: 'Manicure', name: 'Polish Only').first.try(:amount) %></td>
+      </tr>
+      <tr>
+        <td>Glycolic Hand Treatment</td>
+        <td>$<%= Price.where(type: 'Manicure', name: 'Glycolic Hand Treatment').first.try(:amount) %></td>
+      </tr>
+      <tr>
+        <td>Thermo-tone</td>
+        <td>$<%= Price.where(type: 'Manicure', name: 'Thermo-tone').first.try(:amount) %></td>
+      </tr>
+    </table>
+  </div>
+  <div class="spa_table">
+    <h2>Pedicure</h2>
+    <p>Our process will leave your feet looking years younger. Come remove some of the stress from your heels, and get ready to wear some open toed shoes that compliment your new color coat.</p>
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Express Pedicure</td>
+        <td>$<%= Price.where(type: 'Pedicure', name: 'Express Pedicure').first.try(:amount) %></td>
+      </tr>
+      <tr>
+        <td>Customized Manicure</td>
+        <td>$<%= Price.where(type: 'Pedicure', name: 'Customized Pedicure').first.try(:amount) %></td>
+      </tr>
+      <tr>
+        <td>Paraffin Dip</td>
+        <td>$<%= Price.where(type: 'Pedicure', name: 'Paraffin Dip').first.try(:amount) %></td>
+      </tr>
+      <tr>
+        <td>French Polish</td>
+        <td>$<%= Price.where(type: 'Pedicure', name: 'French Polish').first.try(:amount) %></td>
+      </tr>
+      <tr>
+        <td>Citrus Exfoliation</td>
+        <td>$<%= Price.where(type: 'Pedicure', name: 'Citrus Exfoliation').first.try(:amount) %></td>
+      </tr>
+      <tr>
+        <td>Hydrating Mask</td>
+        <td>$<%= Price.where(type: 'Pedicure', name: 'Hydrating Mask').first.try(:amount) %></td>
+      </tr>
+      <tr>
+        <td>Lava Mud</td>
+        <td>$<%= Price.where(type: 'Pedicure', name: 'Lava Mud').first.try(:amount) %></td>
+      </tr>
+      <tr>
+        <td>Women's Citrus Spa Pedicure</td>
+        <td>$<%= Price.where(type: 'Pedicure', name: "Women's Citrus Spa Pedicure").first.try(:amount) %></td>
+      </tr>
+      <tr>
+        <td>Men's Citrus Spa Pedicure</td>
+        <td>$<%= Price.where(type: 'Pedicure', name: "Men's Citrus Spa Pedicure").first.try(:amount) %></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="spa_service_item">
+  <h2>Studio 1001 Products</h2>
+  <p>All of our products are CND and OPI made. We use only the highest quality polishes, scrubs, lotions and shellacs. Everything we use helps us make you more beautiful, confident and ready to take on the world! <a href="mailto:contact@studio1001.net+Subject=Studio%201001%20Products" title="Click here to send an email">Contact us</a> today to set up your appointment.</p>
+</div>
+</div>
